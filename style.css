@@ -35,7 +35,7 @@ ul
 }
 .company-logo
 {
-    background-image: url(logo.png);
+    background-image: url(./assets/logo.png);
     background-size: cover;
     height: 60px;
     width: 140px;
@@ -84,7 +84,7 @@ ul
 {
     height:400px;
     width: 100%;
-    background-image: url(banner.jpg);
+    background-image: url(./assets/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -102,7 +102,7 @@ ul
 {
     height: 300px;
     width: 70%;
-    background-image: url(banner2.jpg);
+    background-image: url(./assets/banner2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
