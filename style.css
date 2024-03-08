@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+body,html{
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+header{
+    overflow: hidden;
+}
 /* .amaranth-regular 
 {
     font-family: "Amaranth", sans-serif;
@@ -49,11 +57,11 @@ ul
     font-size: .8rem;
     font-family: 'amaranth',sans-serif;
 }
-.heart
+.heart i
 {
-    position: relative;
+    position: absolute;
     top: -8px;
-    left: -4px;
+    left: 22%;
     height: 10px;
     width: 10px;
     transform: rotate(12deg) !important;
@@ -62,6 +70,7 @@ ul
 .button
 {
     border-radius: 3px;
+    font-family: 'amaranth',sans-serif;
     background-color: #fcb302;
     color: black !important;
     padding: 7px 20px;
@@ -81,8 +90,13 @@ ul
 }
 .middle-section
 {
-    height: 700px;
+    height: 400px;
+    width: 100%;
     background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 .banner-add
 {
@@ -91,16 +105,344 @@ ul
     background-image: url(banner2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
-    left: 200px ;
+    background-position: center;
 }
 .middle-text
 {
     font-family: 'amaranth',sans-serif;
+    background-color: #f5f5f5;
     color: black !important;
-    font-size: 1.8rem;
-    font-weight: 500;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.middle-section-info
+{
+    height: 370px;
+    background-color: #f5f5f5;
+}
+.info-container {
+    height: 300px;
+    width: 1200px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    margin: 0 auto; /* Add this to center the container horizontally */
+    border-bottom: 2px solid #fcb302;
+}
+.circular-img
+{
+    width: 120px; /* Set width and height to desired size for circular container */
+    height: 120px;
+    border-radius: 50%; /* Makes the container circular */
+    overflow: hidden; /* Ensures image doesn't exceed circular container */
+    background-color: #fcb302; /* Background color for the circular container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    left: 10px;
-    top: 5px;
+    left: 40px;
+    bottom: 10px;
+}
+  
+.img-prop
+{
+    width: auto; /* Ensures the image fills the circular container */
+    height: 100px; /* Maintains aspect ratio of the image */
+}
+.uppertext
+{
+    font-family: 'amaranth',sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+.lowertext
+{
+    font-weight: 300;
+    color: black;
+}
+.menu-text
+{
+    font-family: 'amaranth',sans-serif;
+    background-color: #ffffff;
+    color: black !important;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-left: 125px;
+    padding-top: 50px;
+}
+.menu-bar
+{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-right: 68px;
+    padding-left: 50px;
+    background-color: #ffffff;
+}
+.lower
+{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.dishes
+{
+    height: 150px;
+    width: 250px;
+    background-color: #fcb302;
+
+}
+.dish-img
+{
+    width: auto;
+    height: 150px;
+}
+.order-button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding-bottom: 70px;
+}
+.button-order
+{
+    border-radius: 3px;
+    font-family: 'amaranth',sans-serif;
+    background-color: #fcb302;
+    color: black !important;
+    padding: 10px 40px;
+}
+.tagline
+{
+    height: 370px;
+    width: 1150px;
+    background-color: #f5f5f5;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+}
+.banner-tagline
+{
+    height: 370px;
+    width: auto;
+}
+.tagline-text-heading
+{
+    font-family: 'amaranth',sans-serif;
+    /* background-color: #ffffff; */
+    color: black !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 25px 25px;
+}
+.tagline-subheading
+{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    font-family: sans-serif;
+}
+.main-tagline
+{
+    font-family: sans-serif;
+    color: black;
+    font-size: 1.3rem;
+    padding-left: 25px;
+}
+.media-text
+{
+    font-family: 'amaranth',sans-serif;
+    background-color: #ffffff;
+    color: black !important;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-left: 125px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.media-container
+{
+    height: 160px;
+    width: 1180px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+.news-logo
+{
+    height: 100px;
+}
+.readall
+{
+    font-family: 'amaranth',sans-serif;
+    color: #008cba;
+    font-weight: 800;
+    text-align: right;
+    padding-right: 140px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+.horizontal-line {
+    border-bottom:2px solid #fcb302;
+    width: 1200px;
+    margin: 0 auto;
+}
+.download-links
+{
+    height: 490px;
+    width: 1180px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.links-top-heading
+{
+    font-family: 'amaranth',sans-serif;
+    background-color: #ffffff;
+    color: black !important;
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding-top: 50px;
+}
+.links-subheading
+{
+    font-family: sans-serif;
+    background-color: #ffffff;
+    color: black;
+    font-size: 1rem;
+    padding-top: 30px;
+
+}
+.bold
+{
+    font-weight: bold;
+}
+.links-sub-subheading
+{
+    font-family: sans-serif;
+    background-color: #ffffff;
+    color: black;
+    font-size: 1rem;
+    padding-top: 5px;
+}
+.store-logos
+{
+    padding-top: 100px;
+}
+.appstore
+{
+    height: 40px;
+    width: 165px;
+    padding-right: 20px;
+}
+.playstore
+{
+    height: 40px;
+    width: 145px;
+}
+.mobile-img
+{
+    height: 490px;
+    width: 660px;
+}
+footer
+{
+    height: 370px;
+    background-color: #930036;
+    display: flex;
+    justify-content: space-evenly;
+}
+.links-header
+{
+    font-family: 'amaranth',sans-serif;
+    color: #ffffff;
+    font-size: 1rem;
+    padding-top: 70px;
+    /* font-weight: 700; */
+}
+.links-list
+{
+    font-family: 'amaranth',sans-serif;
+    color: #ffffff;
+    font-size: .8rem; 
+    font-weight: lighter;
+    padding-top: 20px;
+}
+.loc-text
+{
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.phy-stores
+{
+    height: 35px;
+    width: 400px;
+    margin-left: 50px;
+}
+.middle-font
+{
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: .8rem;
+    padding-top: 5px;
+    text-align: center;
+}
+.add-top
+{
+    padding-top: 15px;
+}
+.copyright
+{
+    font-family: sans-serif;
+    color: #ffffff;
+    opacity: 28%;
+    font-size: .8rem;
+    text-align: center;
+    padding-top: 30px;
+}
+.follow-text
+{
+    font-family: 'amaranth',sans-serif;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.social-logos
+{
+    display: flex;
+}
+.circular-logo
+{
+    width: 40px; /* Set width and height to desired size for circular container */
+    height: 40px;
+    border-radius: 50%; /* Makes the container circular */
+    overflow: hidden; /* Ensures image doesn't exceed circular container */
+    background-color: #fcb302; /* Background color for the circular container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+
+}
+.text-logo
+{
+    color: black;
+    font-size: 1.5rem;
 }
